@@ -43,6 +43,9 @@
         
                                         <h5 class="mt-0">Inline edit with Button</h5>
                                         <p class="sub-header">Inline edit like a spreadsheet, toolbar column with edit button only and without focus on first input.</p>
+                                        
+                                                    <a href="<?php echo base_url('services/create');?>" class="btn btn-success">Creat</a>
+                                                </td>
                                         <div class="table-responsive">
                                             <table class="table table-centered mb-0" id="btn-editable">
                                                 <thead>
@@ -52,7 +55,6 @@
                                                         <th>Price</th>
                                                         <th>Doctor</th>
                                                         <th>Mobile</th>
-                                                        <th>Creat</th>
                                                         <th>Edit</th>
                                                         <th>Delete</th>
                                                     </tr>
@@ -66,6 +68,13 @@
                                                         <td><?= $item ['price'] ?></td>
                                                         <td><?= $item ['doctor'] ?></td>
                                                         <td><?= $item ['mobile'] ?></td>
+                                                
+                                                <td>
+                                                    <a href="<?php echo base_url('/products/delete/' . $item['id']);?>" class="btn btn-success" onclick="return confirm('Are You Sure to Delete?')">Edit</a>
+                                                </td>
+                                                <td>
+                                                    <a href="<?php echo base_url('/products/edit/' . $item['id']) ?>" class="btn btn-danger">Delete</a>
+                                                </td>
                                                         
                                                     </tr>
                                                     <?php endforeach ?>

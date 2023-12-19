@@ -43,7 +43,7 @@
                                             <!-- item-->
                                             <a href="javascript:void(0);" class="dropdown-item notify-item">
                                                 <div class="d-flex align-items-start">
-                                                    <img class="d-flex me-2 rounded-circle" src="assets/images/users/user-2.jpg" alt="Generic placeholder image" height="32">
+                                                    <img class="d-flex me-2 rounded-circle" src="<?= site_url('assets/images/users/user-2.jpg')?>" alt="Generic placeholder image" height="32">
                                                     <div class="w-100">
                                                         <h5 class="m-0 font-14">Erwin E. Brown</h5>
                                                         <span class="font-12 mb-0">UI Designer</span>
@@ -54,7 +54,7 @@
                                             <!-- item-->
                                             <a href="javascript:void(0);" class="dropdown-item notify-item">
                                                 <div class="d-flex align-items-start">
-                                                    <img class="d-flex me-2 rounded-circle" src="assets/images/users/user-5.jpg" alt="Generic placeholder image" height="32">
+                                                    <img class="d-flex me-2 rounded-circle" src="<?= site_url('assets/images/users/user-5.jpg')?>" alt="Generic placeholder image" height="32">
                                                     <div class="w-100">
                                                         <h5 class="m-0 font-14">Jacob Deo</h5>
                                                         <span class="font-12 mb-0">Developer</span>
@@ -102,7 +102,7 @@
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item active">
                                         <div class="notify-icon">
-                                            <img src="assets/images/users/user-1.jpg" class="img-fluid rounded-circle" alt="" /> </div>
+                                            <img src="<?= site_url('assets/images/users/user-1.jpg')?>" class="img-fluid rounded-circle" alt="" /> </div>
                                         <p class="notify-details">Cristina Pride</p>
                                         <p class="text-muted mb-0 user-msg">
                                             <small>Hi, How are you? What about our next meeting</small>
@@ -122,7 +122,7 @@
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item">
                                         <div class="notify-icon">
-                                            <img src="assets/images/users/user-4.jpg" class="img-fluid rounded-circle" alt="" /> </div>
+                                            <img src="<?= site_url('assets/images/users/user-4.jpg')?>" class="img-fluid rounded-circle" alt="" /> </div>
                                         <p class="notify-details">Karen Robinson</p>
                                         <p class="text-muted mb-0 user-msg">
                                             <small>Wow ! this admin looks good and awesome design</small>
@@ -172,7 +172,7 @@
     
                         <li class="dropdown notification-list topbar-dropdown">
                             <a class="nav-link dropdown-toggle nav-user me-0 waves-effect waves-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                <img src="assets/images/users/user-1.jpg" alt="user-image" class="rounded-circle">
+                                <img src="<?= site_url('assets/images/users/user-1.jpg')?>" alt="user-image" class="rounded-circle">
                                 <span class="pro-user-name ms-1">
                                     Nowak <i class="mdi mdi-chevron-down"></i> 
                                 </span>
@@ -218,18 +218,18 @@
                     <div class="logo-box">
                         <a href="/" class="logo logo-light text-center">
                             <span class="logo-sm">
-                                <img src="assets/images/logo-sm.png" alt="" height="22">
+                                <img src="<?= site_url('assets/images/logo-sm.png')?>" alt="" height="22">
                             </span>
                             <span class="logo-lg">
-                                <img src="assets/images/logo-light.png" alt="" height="16">
+                                <img src="<?= site_url('assets/images/logo-light.png')?>" alt="" height="16">
                             </span>
                         </a>
                         <a href="/" class="logo logo-dark text-center">
                             <span class="logo-sm">
-                                <img src="assets/images/logo-sm.png" alt="" height="22">
+                                <img src="<?= site_url('assets/images/logo-sm.png')?>" alt="" height="22">
                             </span>
                             <span class="logo-lg">
-                                <img src="assets/images/logo-dark.png" alt="" height="16">
+                                <img src="<?= site_url('assets/images/logo-dark.png')?>" alt="" height="16">
                             </span>
                         </a>
                     </div>

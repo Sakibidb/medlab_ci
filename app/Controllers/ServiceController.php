@@ -19,4 +19,32 @@ class ServiceController extends BaseController
         return view('services/index', $data);
     }
 
+    public function create(){
+        return view("services/create");
+    }
+
+    public function store(){
+        $data = [
+            'name' => $this->request->getVar('name'),
+            'price' => $this->request->getVar('price'),
+            'doctor' => $this->request->getVar('dr'),
+            'mobile' => $this->request->getVar('phn'),
+        ];
+        $rules = [
+            'name' => 'required|max_length[30]|min_length[3]',
+            'price' => 'required|numeric',
+            'dr'    => 'required|max_length[30]|min_length[3]',
+            // 'phn' => 'required|numeric',
+                ];
+        if(! $this->validate($rules)){
+            return view("services/create");
+        } else {
+            $this->service->insert($data);
+            $session = session();
+            $session->setFlashdata('message','Inserted and Uploaded Successfully');
+            $this->response->redirect('/services');
+
+        }
+    }
+
 }
