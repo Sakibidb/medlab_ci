@@ -41,10 +41,36 @@ class ServiceController extends BaseController
         } else {
             $this->service->insert($data);
             $session = session();
-            $session->setFlashdata('message','Inserted and Uploaded Successfully');
+            //$session->setFlashdata('message','Inserted and Uploaded Successfully');
             $this->response->redirect('/services');
-
         }
     }
+
+    public function edit($id){
+        $data = $this->service->find($id);
+        return view("services/edit", $data);
+    }
+
+    public function update($id){
+        $data = [
+            'name' => $this->request->getVar('name'),
+            'price' => $this->request->getVar('price'),
+            'doctor' => $this->request->getVar('dr'),
+            'mobile' => $this->request->getVar('phn'),
+        ];
+        $this->service->update($id, $data);
+        $session = session();
+        //$session->setFlashdata('message','Updated Successfully');
+        $this->response->redirect('/services');
+    }
+
+    public function delete($id){
+        $this->service->delete($id);
+        $session = session();
+        //$session->setFlashdata('message','Deleted Successfully');
+        $this->response->redirect('/services');
+    }
+
+
 
 }

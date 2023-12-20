@@ -9,14 +9,14 @@
         <meta content="Coderthemes" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="<?= site_url('assets/images/favicon.ico')?>">
 
         <!-- App css -->
 
-        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-style" />
+        <link href="<?= site_url('assets/css/app.min.css')?>" rel="stylesheet" type="text/css" id="app-style" />
 
         <!-- icons -->
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?= site_url('assets/css/icons.min.css" rel="stylesheet" type="text/css')?>" />
 
     </head>
 
@@ -41,8 +41,8 @@
                                 <div class="card">
                                     <div class="card-body">
         
-                                        <h5 class="mt-0">Inline edit with Button</h5>
-                                        <p class="sub-header">Inline edit like a spreadsheet, toolbar column with edit button only and without focus on first input.</p>
+                                        <h3 class="mt-0">This is service table</h3>
+                                        <p class="sub-header">which service we provide</p>
                                         
                                                     <a href="<?php echo base_url('services/create');?>" class="btn btn-success">Creat</a>
                                                 </td>
@@ -70,10 +70,10 @@
                                                         <td><?= $item ['mobile'] ?></td>
                                                 
                                                 <td>
-                                                    <a href="<?php echo base_url('/products/delete/' . $item['id']);?>" class="btn btn-success" onclick="return confirm('Are You Sure to Delete?')">Edit</a>
+                                                    <a href="<?php echo base_url('services/edit' . $item['id']);?>" class="btn btn-success">Edit</a>
                                                 </td>
                                                 <td>
-                                                    <a href="<?php echo base_url('/products/edit/' . $item['id']) ?>" class="btn btn-danger">Delete</a>
+                                                    <a href="<?php echo base_url('services/delete' . $item['id']) ?>" class="btn btn-danger" onclick="return confirm('Are You Sure to Delete?')">Delete</a>
                                                 </td>
                                                         
                                                     </tr>
@@ -263,26 +263,26 @@
         <div class="rightbar-overlay"></div>
 
         <!-- Vendor -->
-        <script src="assets/libs/jquery/jquery.min.js"></script>
-        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/libs/simplebar/simplebar.min.js"></script>
-        <script src="assets/libs/node-waves/waves.min.js"></script>
-        <script src="assets/libs/waypoints/lib/jquery.waypoints.min.js"></script>
-        <script src="assets/libs/jquery.counterup/jquery.counterup.min.js"></script>
-        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="<?= site_url('assets/libs/jquery/jquery.min.js')?>"></script>
+        <script src="<?= site_url('assets/libs/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
+        <script src="<?= site_url('assets/libs/simplebar/simplebar.min.js')?>"></script>
+        <script src="<?= site_url('assets/libs/node-waves/waves.min.js')?>"></script>
+        <script src="<?= site_url('assets/libs/waypoints/lib/jquery.waypoints.min.js')?>"></script>
+        <script src="<?= site_url('assets/libs/jquery.counterup/jquery.counterup.min.js')?>"></script>
+        <script src="<?= site_url('assets/libs/feather-icons/feather.min.js')?>"></script>
 
         <!-- knob plugin -->
-        <script src="assets/libs/jquery-knob/jquery.knob.min.js"></script>
+        <script src="<?= site_url('assets/libs/jquery-knob/jquery.knob.min.js')?>"></script>
 
         <!--Morris Chart-->
-        <script src="assets/libs/morris.js06/morris.min.js"></script>
-        <script src="assets/libs/raphael/raphael.min.js"></script>
+        <script src="<?= site_url('assets/libs/morris.js06/morris.min.js')?>"></script>
+        <script src="<?= site_url('assets/libs/raphael/raphael.min.js')?>"></script>
   
         <!-- Dashboar init js-->
-        <script src="assets/js/pages/dashboard.init.js"></script>
+        <script src="<?= site_url('assets/js/pages/dashboard.init.js')?>"></script>
 
         <!-- App js-->
-        <script src="assets/js/app.min.js"></script>
+        <script src="<?= site_url('assets/js/app.min.js')?>"></script>
         
     </body>
 </html>

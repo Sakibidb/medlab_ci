@@ -73,7 +73,7 @@
 
             <li>
                 <a href="#services" data-bs-toggle="collapse">
-                    <i class="mdi mdi-medical-outline"></i>
+                    <i class="mdi mdi-clipboard-outline"></i>
                     <span> Services </span>
                     <span class="menu-arrow"></span>
                 </a>
@@ -84,6 +84,21 @@
                         </li>
                         <li>
                             <a href="/services/create">Create Services</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <a href="#appointment" data-bs-toggle="collapse">
+                    <i class="mdi mdi-clipboard-outline"></i>
+                    <span> Appointment </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="appointment">
+                    <ul class="nav-second-level">
+                        <li>
+                            <a href="/appointment">Appointment List</a>
                         </li>
                     </ul>
                 </div>

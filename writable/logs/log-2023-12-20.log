@@ -1,0 +1,385 @@
+ERROR - 2023-12-20 03:01:05 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\php\htdocs\codeigniter\medadmin\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\php\htdocs\codeigniter\medadmin\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'lab_ci', 3306, '', 0)
+#1 D:\php\htdocs\codeigniter\medadmin\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\php\htdocs\codeigniter\medadmin\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\php\htdocs\codeigniter\medadmin\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\php\htdocs\codeigniter\medadmin\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\php\htdocs\codeigniter\medadmin\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\php\htdocs\codeigniter\medadmin\app\Controllers\ServiceController.php(18): CodeIgniter\BaseModel->findAll()
+#7 D:\php\htdocs\codeigniter\medadmin\system\CodeIgniter.php(942): App\Controllers\ServiceController->index()
+#8 D:\php\htdocs\codeigniter\medadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+#9 D:\php\htdocs\codeigniter\medadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\php\htdocs\codeigniter\medadmin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\php\htdocs\codeigniter\medadmin\system\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\c...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\php\htdocs\codeigniter\medadmin\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\php\htdocs\codeigniter\medadmin\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\php\htdocs\codeigniter\medadmin\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\php\htdocs\codeigniter\medadmin\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\php\htdocs\codeigniter\medadmin\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\php\htdocs\codeigniter\medadmin\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\php\htdocs\codeigniter\medadmin\app\Controllers\ServiceController.php(18): CodeIgniter\BaseModel->findAll()
+#6 D:\php\htdocs\codeigniter\medadmin\system\CodeIgniter.php(942): App\Controllers\ServiceController->index()
+#7 D:\php\htdocs\codeigniter\medadmin\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+#8 D:\php\htdocs\codeigniter\medadmin\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\php\htdocs\codeigniter\medadmin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\php\htdocs\codeigniter\medadmin\system\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\c...')
+#11 {main}
+CRITICAL - 2023-12-20 03:01:05 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `service`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ServiceController.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+INFO - 2023-12-20 03:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:02:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-20 03:24:26 --> Invalid file: "services/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('services/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+INFO - 2023-12-20 03:31:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-20 03:32:48 --> Invalid file: "services/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('services/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+INFO - 2023-12-20 03:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-20 03:34:31 --> Invalid file: "services/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('services/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 03:37:23 --> Invalid file: "services/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('services/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 03:37:24 --> Invalid file: "services/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('services/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 03:37:25 --> Invalid file: "services/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('services/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 03:37:25 --> Invalid file: "services/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('services/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 03:37:25 --> Invalid file: "services/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('services/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 03:37:25 --> Invalid file: "services/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('services/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 03:38:07 --> Invalid file: "services/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('services/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 03:38:13 --> Invalid file: "services/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('services/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 03:40:41 --> Invalid file: "services/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('services/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 03:40:52 --> Invalid file: "services/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('services/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 03:40:54 --> Invalid file: "services/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('services/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 03:41:13 --> Invalid file: "services/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('services/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 03:41:14 --> Invalid file: "services/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('services/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 03:41:14 --> Invalid file: "services/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('services/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 03:41:14 --> Invalid file: "services/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('services/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 03:41:31 --> Invalid file: "/services/edit/.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/services/edit/.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/services/edit/', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('/services/edit/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 03:41:32 --> Invalid file: "/services/edit/.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/services/edit/.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/services/edit/', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('/services/edit/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 03:41:54 --> Invalid file: "services/edit/.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services/edit/.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit/', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('services/edit/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 03:42:44 --> Invalid file: "services/edit/.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services/edit/.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit/', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(51): view('services/edit/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+INFO - 2023-12-20 03:44:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-20 03:47:09 --> Undefined variable: service
+in APPPATH\Views\services\edit.php on line 53.
+ 1 APPPATH\Views\services\edit.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: service', 'D:\\php\\htdocs\\codeigniter\\medadmin\\app\\Views\\services\\edit.php', 53, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\php\\htdocs\\codeigniter\\medadmin\\app\\Views\\services\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('services/edit', [], true)
+ 5 APPPATH\Controllers\ServiceController.php(51): view('services/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+INFO - 2023-12-20 03:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:52:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 03:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:00:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:05:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:06:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:13:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 04:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-20 04:58:54 --> Undefined variable: items
+in APPPATH\Views\appointment\index.php on line 64.
+ 1 APPPATH\Views\appointment\index.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: items', 'D:\\php\\htdocs\\codeigniter\\medadmin\\app\\Views\\appointment\\index.php', 64, [])
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\php\\htdocs\\codeigniter\\medadmin\\app\\Views\\appointment\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('appointment/index', [], true)
+ 5 APPPATH\Controllers\Appointment.php(11): view('appointment/index')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Appointment->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 05:02:05 --> Undefined variable: items
+in APPPATH\Views\appointment\index.php on line 64.
+ 1 APPPATH\Views\appointment\index.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: items', 'D:\\php\\htdocs\\codeigniter\\medadmin\\app\\Views\\appointment\\index.php', 64, [])
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\php\\htdocs\\codeigniter\\medadmin\\app\\Views\\appointment\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('appointment/index', [], true)
+ 5 APPPATH\Controllers\Appointment.php(11): view('appointment/index')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Appointment->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+CRITICAL - 2023-12-20 05:02:12 --> Undefined variable: items
+in APPPATH\Views\appointment\index.php on line 64.
+ 1 APPPATH\Views\appointment\index.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: items', 'D:\\php\\htdocs\\codeigniter\\medadmin\\app\\Views\\appointment\\index.php', 64, [])
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\php\\htdocs\\codeigniter\\medadmin\\app\\Views\\appointment\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('appointment/index', [], true)
+ 5 APPPATH\Controllers\Appointment.php(11): view('appointment/index')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Appointment->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\php\\htdocs\\codeigniter\\medadmin\\public\\index.php')
+INFO - 2023-12-20 07:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
