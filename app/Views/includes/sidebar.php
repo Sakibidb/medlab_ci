@@ -73,7 +73,8 @@
 
             <li>
                 <a href="#services" data-bs-toggle="collapse">
-                    <i class="mdi mdi-clipboard-outline"></i>
+                <i class="mdi mdi-monitor-multiple"></i>
+
                     <span> Services </span>
                     <span class="menu-arrow"></span>
                 </a>
@@ -91,7 +92,8 @@
 
             <li>
                 <a href="#appointment" data-bs-toggle="collapse">
-                    <i class="mdi mdi-clipboard-outline"></i>
+                <i class="mdi mdi-account-multiple"></i>
+
                     <span> Appointment </span>
                     <span class="menu-arrow"></span>
                 </a>
@@ -195,7 +197,7 @@
                             <a href="auth-login.html">Log In</a>
                         </li>
                         <li>
-                            <a href="auth-register.html">Register</a>
+                            <a href="register">Register</a>
                         </li>
                         <li>
                             <a href="auth-recoverpw.html">Recover Password</a>

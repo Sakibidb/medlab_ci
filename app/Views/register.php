@@ -12,7 +12,7 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="<?= site_url('assets/images/favicon.ico') ?>">
 
-    <!-- App css --> 
+    <!-- App css -->
 
     <link href="<?= site_url('assets/css/app.min.css') ?>" rel="stylesheet" type="text/css" id="app-style" />
 

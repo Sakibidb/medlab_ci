@@ -9,14 +9,14 @@
         <meta content="Coderthemes" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="<?= site_url('assets/images/favicon.ico')?>">
 
         <!-- App css -->
 
-        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-style" />
+        <link href="<?= site_url('assets/css/app.min.css')?>" rel="stylesheet" type="text/css" id="app-style" />
 
         <!-- icons -->
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?= site_url('assets/css/icons.min.css')?>" rel="stylesheet" type="text/css" />
 
     </head>
 
@@ -289,7 +289,7 @@
                                     <div class="card-body widget-user">
                                         <div class="d-flex align-items-center">
                                             <div class="flex-shrink-0 avatar-lg me-3">
-                                                <img src="assets/images/users/user-3.jpg" class="img-fluid rounded-circle" alt="user">
+                                                <img src="<?= site_url('assets/images/users/user-3.jpg')?>" class="img-fluid rounded-circle" alt="user">
                                             </div>
                                             <div class="flex-grow-1 overflow-hidden">
                                                 <h5 class="mt-0 mb-1">Chadengle</h5>
@@ -307,7 +307,7 @@
                                     <div class="card-body widget-user">
                                         <div class="d-flex align-items-center">
                                             <div class="flex-shrink-0 avatar-lg me-3">
-                                                <img src="assets/images/users/user-2.jpg" class="img-fluid rounded-circle" alt="user">
+                                                <img src="<?= site_url('assets/images/users/user-2.jpg')?>" class="img-fluid rounded-circle" alt="user">
                                             </div>
                                             <div class="flex-grow-1 overflow-hidden">
                                                 <h5 class="mt-0 mb-1"> Michael Zenaty</h5>
@@ -325,7 +325,7 @@
                                     <div class="card-body widget-user">
                                         <div class="d-flex align-items-center">
                                             <div class="flex-shrink-0 avatar-lg me-3">
-                                                <img src="assets/images/users/user-1.jpg" class="img-fluid rounded-circle" alt="user">
+                                                <img src="<?= site_url('assets/images/users/user-1.jpg')?>" class="img-fluid rounded-circle" alt="user">
                                             </div>
                                             <div class="flex-grow-1 overflow-hidden">
                                                 <h5 class="mt-0 mb-1">Stillnotdavid</h5>
@@ -343,7 +343,7 @@
                                     <div class="card-body widget-user">
                                         <div class="d-flex align-items-center">
                                             <div class="flex-shrink-0 avatar-lg me-3">
-                                                <img src="assets/images/users/user-10.jpg" class="img-fluid rounded-circle" alt="user">
+                                                <img src="<?= site_url('assets/images/users/user-10.jpg')?>" class="img-fluid rounded-circle" alt="user">
                                             </div>
                                             <div class="flex-grow-1 overflow-hidden">
                                                 <h5 class="mt-0 mb-1">Tomaslau</h5>
@@ -386,7 +386,7 @@
                                             
                                             <div class="inbox-item">
                                                 <a href="#">
-                                                    <div class="inbox-item-img"><img src="assets/images/users/user-1.jpg" class="rounded-circle" alt=""></div>
+                                                    <div class="inbox-item-img"><img src="<?= site_url('assets/images/users/user-1.jpg')?>" class="rounded-circle" alt=""></div>
                                                     <h5 class="inbox-item-author mt-0 mb-1">Chadengle</h5>
                                                     <p class="inbox-item-text">Hey! there I'm available...</p>
                                                     <p class="inbox-item-date">13:40 PM</p>
@@ -395,7 +395,7 @@
                                             
                                             <div class="inbox-item">
                                                 <a href="#">
-                                                    <div class="inbox-item-img"><img src="assets/images/users/user-2.jpg" class="rounded-circle" alt=""></div>
+                                                    <div class="inbox-item-img"><img src="<?= site_url('assets/images/users/user-2.jpg')?>" class="rounded-circle" alt=""></div>
                                                     <h5 class="inbox-item-author mt-0 mb-1">Tomaslau</h5>
                                                     <p class="inbox-item-text">I've finished it! See you so...</p>
                                                     <p class="inbox-item-date">13:34 PM</p>
@@ -404,7 +404,7 @@
     
                                             <div class="inbox-item">
                                                     <a href="#">
-                                                    <div class="inbox-item-img"><img src="assets/images/users/user-3.jpg" class="rounded-circle" alt=""></div>
+                                                    <div class="inbox-item-img"><img src="<?= site_url('assets/images/users/user-3.jpg')?>" class="rounded-circle" alt=""></div>
                                                     <h5 class="inbox-item-author mt-0 mb-1">Stillnotdavid</h5>
                                                     <p class="inbox-item-text">This theme is awesome!</p>
                                                     <p class="inbox-item-date">13:17 PM</p>
@@ -413,7 +413,7 @@
     
                                             <div class="inbox-item">
                                                 <a href="#">
-                                                    <div class="inbox-item-img"><img src="assets/images/users/user-4.jpg" class="rounded-circle" alt=""></div>
+                                                    <div class="inbox-item-img"><img src="<?= site_url('assets/images/users/user-4.jpg')?>" class="rounded-circle" alt=""></div>
                                                     <h5 class="inbox-item-author mt-0 mb-1">Kurafire</h5>
                                                     <p class="inbox-item-text">Nice to meet you</p>
                                                     <p class="inbox-item-date">12:20 PM</p>
@@ -422,7 +422,7 @@
     
                                             <div class="inbox-item">
                                                 <a href="#">
-                                                    <div class="inbox-item-img"><img src="assets/images/users/user-5.jpg" class="rounded-circle" alt=""></div>
+                                                    <div class="inbox-item-img"><img src="<?= site_url('assets/images/users/user-5.jpg')?>" class="rounded-circle" alt=""></div>
                                                     <h5 class="inbox-item-author mt-0 mb-1">Shahedk</h5>
                                                     <p class="inbox-item-text">Hey! there I'm available...</p>
                                                     <p class="inbox-item-date">10:15 AM</p>
@@ -708,26 +708,26 @@
         <div class="rightbar-overlay"></div>
 
         <!-- Vendor -->
-        <script src="assets/libs/jquery/jquery.min.js"></script>
-        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/libs/simplebar/simplebar.min.js"></script>
-        <script src="assets/libs/node-waves/waves.min.js"></script>
-        <script src="assets/libs/waypoints/lib/jquery.waypoints.min.js"></script>
-        <script src="assets/libs/jquery.counterup/jquery.counterup.min.js"></script>
-        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="<?= site_url('assets/libs/jquery/jquery.min.js')?>"></script>
+        <script src="<?= site_url('assets/libs/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
+        <script src="<?= site_url('assets/libs/simplebar/simplebar.min.js')?>"></script>
+        <script src="<?= site_url('assets/libs/node-waves/waves.min.js')?>"></script>
+        <script src="<?= site_url('assets/libs/waypoints/lib/jquery.waypoints.min.js')?>"></script>
+        <script src="<?= site_url('assets/libs/jquery.counterup/jquery.counterup.min.js')?>"></script>
+        <script src="<?= site_url('assets/libs/feather-icons/feather.min.js')?>"></script>
 
         <!-- knob plugin -->
-        <script src="assets/libs/jquery-knob/jquery.knob.min.js"></script>
+        <script src="<?= site_url('assets/libs/jquery-knob/jquery.knob.min.js')?>"></script>
 
         <!--Morris Chart-->
-        <script src="assets/libs/morris.js06/morris.min.js"></script>
-        <script src="assets/libs/raphael/raphael.min.js"></script>
+        <script src="<?= site_url('assets/libs/morris.js06/morris.min.js')?>"></script>
+        <script src="<?= site_url('assets/libs/raphael/raphael.min.js')?>"></script>
   
         <!-- Dashboar init js-->
-        <script src="assets/js/pages/dashboard.init.js"></script>
+        <script src="<?= site_url('assets/js/pages/dashboard.init.js')?>"></script>
 
         <!-- App js-->
-        <script src="assets/js/app.min.js"></script>
+        <script src="<?= site_url('assets/js/app.min.js')?>"></script>
         
     </body>
 </html>
