@@ -20,3 +20,9 @@ $routes->post('services/update/(:num)', 'ServiceController::update/$1');
 
 
 $routes->get('/appointment', 'AppointmentController::index');
+
+$routes->get('register', 'SingupController::index');
+$routes->match(['get', 'post'], 'register/store', 'SingupController::store');
+$routes->get('login', 'LoginController::index');
+
+
