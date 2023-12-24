@@ -7,7 +7,7 @@
 
         <img src="<?= site_url('assets/images/users/user-1.jpg')?>" alt="user-img" title="Mat Helme" class="rounded-circle img-thumbnail avatar-md">
             <div class="dropdown">
-                <a href="#" class="user-name dropdown-toggle h5 mt-2 mb-1 d-block" data-bs-toggle="dropdown"  aria-expanded="false">Nowak Helme</a>
+                <a href="#" class="user-name dropdown-toggle h5 mt-2 mb-1 d-block" data-bs-toggle="dropdown"  aria-expanded="false">Nazmus Sakib</a>
                 <div class="dropdown-menu user-pro-dropdown">
 
                     <!-- item-->
@@ -29,7 +29,7 @@
                     </a>
 
                     <!-- item-->
-                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                    <a href="logout" class="dropdown-item notify-item">
                         <i class="fe-log-out me-1"></i>
                         <span>Logout</span>
                     </a>
@@ -47,7 +47,7 @@
             </li>
 
             <li class="list-inline-item">
-                <a href="#">
+                <a href="logout">
                     <i class="mdi mdi-power"></i>
                 </a>
             </li>

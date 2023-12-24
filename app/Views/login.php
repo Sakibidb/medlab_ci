@@ -35,20 +35,26 @@
                         </div>
                         <div class="card">
                             <div class="card-body p-4">
+                            <?php if (session()->getFlashdata('message') !== NULL) : ?>
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <?php echo session()->getFlashdata('message'); ?>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                <?php endif; ?>
                                 
                                 <div class="text-center mb-4">
                                     <h4 class="text-uppercase mt-0">Sign In</h4>
                                 </div>
 
-                                <form action="#">
+                                <form method="post" action="<?= site_url('login')?>">
                                     <div class="mb-3">
                                         <label for="emailaddress" class="form-label">Email address</label>
-                                        <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                        <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email" name="email">
                                     </div>
 
                                     <div class="mb-3">
                                         <label for="password" class="form-label">Password</label>
-                                        <input class="form-control" type="password" required="" id="password" placeholder="Enter your password">
+                                        <input class="form-control" type="password" required="" id="password" placeholder="Enter your password" name="password">
                                     </div>
 
                                     <div class="mb-3">
@@ -60,6 +66,10 @@
 
                                     <div class="mb-3 d-grid text-center">
                                         <button class="btn btn-primary" type="submit"> Log In </button>
+                                    </div>
+
+                                    <div class="mb-3 d-grid text-center">
+                                        <a href="register" class="btn btn-primary">Register</a>
                                     </div>
                                 </form>
 

@@ -31,7 +31,7 @@ class SingupController extends BaseController
             $userModel->save($data);
             $session= session();
             $session->setFlashdata('message', "SignUp Complete");
-            return redirect()->to('register');
+            return redirect()->to('login');
 
         }else{
             $data['validation'] = $this->validator;
